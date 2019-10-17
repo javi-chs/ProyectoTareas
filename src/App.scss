@@ -1,0 +1,98 @@
+body{
+  background-color: #282c34;
+}
+.myColorPicker{
+  width:auto;
+  
+}
+.App {
+  text-align: center;
+  background-color:#333843;
+  font-family: 'Libre Baskerville', serif;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  border-bottom: 1px solid white;
+  margin-bottom: 20px;
+}
+.TasksGlobal{
+  background-color: #333843;
+  height:100vh;
+  width: 100vw;
+}
+.textIn{
+  all:unset;
+  height: 2em;
+  width: 20em;
+  margin-right:1em;
+  background-color: transparent;
+  color:white;
+  border: none;
+  font-size: 20px;
+}
+.textIn::placeholder{
+color:white;
+font-size: 20px;}
+.myButton{
+  height: 2.45em;
+  width: 7em;
+  background-color: teal; 
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight:550;
+  color: white;
+  transition: box-shadow .60s ease-in-out;
+}
+.myButton:hover{
+  box-shadow: inset 0 -40px 0 -1px #333843;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight:550;
+  color: white;
+  border: 1px solid teal;
+  transform: scale(1.2);
+}
+.taskList{
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding: 1.5em;
+  align-items: flex-start;
+}
+.miTarea{
+  width: 234px;
+  background-color: #696969;
+  margin: 1.5em;
+  padding:1em;
+  &.completada{
+    opacity: 0.6;
+    text-decoration: line-through;
+  }
+  &:hover{
+    transition: background-color 0.5s ease;
+    background-color: teal;
+    
+  }
+  .textoTarea{
+    font-size: 1.3em;
+    &::selection{
+      color: teal;
+      background-color:white;
+    }
+  }
+}
+.textoTarea{
+  color: white;
+  font-weight: 500;
+}
+.actions button{
+  margin: 20px;
+   
+}
