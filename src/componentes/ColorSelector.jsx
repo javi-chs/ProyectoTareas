@@ -11,7 +11,7 @@ class ColorSelector extends Component {
         btnClicked= ()=>{
             this.setState({showPicker: !this.state.showPicker})
         }
-        myFunction= (ev)=>{ console.log(ev);}
+        
 
     render(){
         if(this.state.showPicker){

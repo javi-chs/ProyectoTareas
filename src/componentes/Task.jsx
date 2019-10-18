@@ -1,10 +1,8 @@
 import React from 'react';
 import ColorSelector from "./ColorSelector.jsx"
 
-function prueba(){console.log("asta aki hemos llegao")}
 //()=> props.onDelete(props.data.id) incicamos que hay un atributo de la etiqueta que ref
 // que sera onDelete y que manejara ese evento y le pasamos data.id.
-// onColorSelected = {color => props.onColorChange(props.data.id, color)}
 function Task(props) {
   return (
     <div 
